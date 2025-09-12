@@ -1,12 +1,13 @@
 from fastapi import FastAPI
 from .core.config import settings
 
-app = FastAPI(title="Authentication Demo", version="1.0.0")
+app = FastAPI()
 
 @app.get("/")
-async def root():
+async def read_root():
     return {"message": "Welcome to FastAPI Authentication App"}
 
+# for testing purpose
 @app.get("/info")
 async def info():
     return {
