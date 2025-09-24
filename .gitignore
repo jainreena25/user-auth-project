@@ -210,3 +210,5 @@ __marimo__/Thumbs.d
 # macOS
 .DS_Store
 
+test-db
+*.sqlite3
